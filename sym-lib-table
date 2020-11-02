@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Eurocad)(type Legacy)(uri /home/natehouk/Documents/AS3310-ADSR/eurocad.lib)(options "")(descr ""))
+)
