@@ -221,7 +221,7 @@ L Device:R R12
 U 1 1 5FA11CE6
 P 4900 5650
 F 0 "R12" H 4970 5696 50  0000 L CNN
-F 1 "750R" H 4970 5605 50  0000 L CNN
+F 1 "470R" H 4970 5605 50  0000 L CNN
 F 2 "Seattle_Synths:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4830 5650 50  0001 C CNN
 F 3 "~" H 4900 5650 50  0001 C CNN
 	1    4900 5650
@@ -510,23 +510,10 @@ Wire Wire Line
 Wire Wire Line
 	4150 1150 4150 1700
 Wire Wire Line
-	4150 1700 4000 1700
-Wire Wire Line
 	2700 1850 2700 2150
 Connection ~ 2700 1850
 Text Label 2700 2150 0    50   ~ 0
 SUSTAIN
-$Comp
-L Switch:SW_DP3T SW1
-U 1 1 5F9F38FD
-P 5100 1700
-F 0 "SW1" H 5100 1375 50  0000 C CNN
-F 1 "SW_DP3T" H 5100 1466 50  0000 C CNN
-F 2 "" H 4475 1875 50  0001 C CNN
-F 3 "~" H 4475 1875 50  0001 C CNN
-	1    5100 1700
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R R14
 U 1 1 5F9F3876
@@ -736,7 +723,7 @@ F 3 "~" H 8550 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8950 1700 8950 1400
+	8950 1650 8950 1400
 Wire Wire Line
 	8950 1400 8700 1400
 $Comp
@@ -771,17 +758,6 @@ F 3 "~" H 8950 2950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Switch:SW_Push SW2
-U 1 1 5FA41B39
-P 9500 2950
-F 0 "SW2" V 9454 3098 50  0000 L CNN
-F 1 "SW_Push" V 9545 3098 50  0000 L CNN
-F 2 "Seattle_Synths:SW_PUSH_6mm_H5mm" H 9500 3150 50  0001 C CNN
-F 3 "~" H 9500 3150 50  0001 C CNN
-	1    9500 2950
-	0    1    1    0   
-$EndComp
-$Comp
 L Transistor_BJT:BC548 Q2
 U 1 1 5FA24BBC
 P 8750 2700
@@ -796,78 +772,7 @@ Wire Wire Line
 	8950 2700 8950 2800
 Connection ~ 8950 2700
 Wire Wire Line
-	9500 2750 9500 2450
-Wire Wire Line
-	9500 1700 9600 1700
-Wire Wire Line
-	9600 1800 9450 1800
-$Comp
-L power:GND #PWR0121
-U 1 1 5FA95FD5
-P 9600 2000
-F 0 "#PWR0121" H 9600 1750 50  0001 C CNN
-F 1 "GND" H 9605 1827 50  0000 C CNN
-F 2 "" H 9600 2000 50  0001 C CNN
-F 3 "" H 9600 2000 50  0001 C CNN
-	1    9600 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9600 2000 9600 1900
-$Comp
-L Device:R R25
-U 1 1 5FA98D5E
-P 9800 2450
-F 0 "R25" V 9593 2450 50  0000 C CNN
-F 1 "4K7" V 9684 2450 50  0000 C CNN
-F 2 "Seattle_Synths:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9730 2450 50  0001 C CNN
-F 3 "~" H 9800 2450 50  0001 C CNN
-	1    9800 2450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9650 2450 9500 2450
-Connection ~ 9500 2450
-Wire Wire Line
-	9500 2450 9500 1700
-$Comp
-L power:GND #PWR0122
-U 1 1 5FA9C1F6
-P 10000 2450
-F 0 "#PWR0122" H 10000 2200 50  0001 C CNN
-F 1 "GND" V 10005 2322 50  0000 R CNN
-F 2 "" H 10000 2450 50  0001 C CNN
-F 3 "" H 10000 2450 50  0001 C CNN
-	1    10000 2450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10000 2450 9950 2450
-$Comp
-L Connector:AudioJack2_Ground_SwitchT J4
-U 1 1 5FA87BB1
-P 9800 1800
-F 0 "J4" H 9620 1676 50  0000 R CNN
-F 1 "GATE_IN" H 9620 1767 50  0000 R CNN
-F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9800 1800 50  0001 C CNN
-F 3 "~" H 9800 1800 50  0001 C CNN
-	1    9800 1800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
 	7350 1100 6550 1100
-$Comp
-L Switch:SW_DP3T SW1
-U 2 1 5FB210D3
-P 9150 1800
-F 0 "SW1" H 9150 1475 50  0000 C CNN
-F 1 "SW_DP3T" H 9150 1566 50  0000 C CNN
-F 2 "" H 8525 1975 50  0001 C CNN
-F 3 "~" H 8525 1975 50  0001 C CNN
-	2    9150 1800
-	-1   0    0    1   
-$EndComp
-Connection ~ 4150 1700
 Wire Wire Line
 	7600 2900 7600 2500
 Wire Wire Line
@@ -878,17 +783,6 @@ Wire Wire Line
 Connection ~ 6750 2200
 Text Label 6750 2550 0    50   ~ 0
 GATE
-$Comp
-L Connector:AudioJack2_Ground_SwitchT J1
-U 1 1 5FB77EC8
-P 5100 2800
-F 0 "J1" H 4920 2676 50  0000 R CNN
-F 1 "TRIGGER_IN" H 4920 2767 50  0000 R CNN
-F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5100 2800 50  0001 C CNN
-F 3 "~" H 5100 2800 50  0001 C CNN
-	1    5100 2800
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:C C4
 U 1 1 5FB79443
@@ -966,9 +860,6 @@ F 3 "~" H 7600 3050 50  0001 C CNN
 	1    7600 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 3150 9500 3150
-Connection ~ 8950 3150
 Wire Wire Line
 	8950 3100 8950 3150
 Wire Wire Line
@@ -1144,71 +1035,71 @@ Wire Wire Line
 $Comp
 L Device:C C9
 U 1 1 5FA2971B
-P 9650 5300
-F 0 "C9" V 9902 5300 50  0000 C CNN
-F 1 "10uF" V 9811 5300 50  0000 C CNN
-F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9688 5150 50  0001 C CNN
-F 3 "~" H 9650 5300 50  0001 C CNN
-	1    9650 5300
+P 9650 5700
+F 0 "C9" V 9902 5700 50  0000 C CNN
+F 1 "10uF" V 9811 5700 50  0000 C CNN
+F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9688 5550 50  0001 C CNN
+F 3 "~" H 9650 5700 50  0001 C CNN
+	1    9650 5700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C10
 U 1 1 5FA29AF6
-P 10550 5300
-F 0 "C10" V 10802 5300 50  0000 C CNN
-F 1 "10uF" V 10711 5300 50  0000 C CNN
-F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 10588 5150 50  0001 C CNN
-F 3 "~" H 10550 5300 50  0001 C CNN
-	1    10550 5300
+P 10550 5700
+F 0 "C10" V 10802 5700 50  0000 C CNN
+F 1 "10uF" V 10711 5700 50  0000 C CNN
+F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 10588 5550 50  0001 C CNN
+F 3 "~" H 10550 5700 50  0001 C CNN
+	1    10550 5700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0132
 U 1 1 5FA2AE32
-P 10700 5300
-F 0 "#PWR0132" H 10700 5050 50  0001 C CNN
-F 1 "GND" V 10705 5172 50  0000 R CNN
-F 2 "" H 10700 5300 50  0001 C CNN
-F 3 "" H 10700 5300 50  0001 C CNN
-	1    10700 5300
+P 10700 5700
+F 0 "#PWR0132" H 10700 5450 50  0001 C CNN
+F 1 "GND" V 10705 5572 50  0000 R CNN
+F 2 "" H 10700 5700 50  0001 C CNN
+F 3 "" H 10700 5700 50  0001 C CNN
+	1    10700 5700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0134
 U 1 1 5FA2B21F
-P 9500 5300
-F 0 "#PWR0134" H 9500 5050 50  0001 C CNN
-F 1 "GND" V 9505 5172 50  0000 R CNN
-F 2 "" H 9500 5300 50  0001 C CNN
-F 3 "" H 9500 5300 50  0001 C CNN
-	1    9500 5300
+P 9500 5700
+F 0 "#PWR0134" H 9500 5450 50  0001 C CNN
+F 1 "GND" V 9505 5572 50  0000 R CNN
+F 2 "" H 9500 5700 50  0001 C CNN
+F 3 "" H 9500 5700 50  0001 C CNN
+	1    9500 5700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10400 5300 10400 4800
+	10400 5700 10400 5400
 Wire Wire Line
-	9800 5300 9800 4800
+	9800 5700 9800 5400
 $Comp
 L power:+12V #PWR0136
 U 1 1 5FA7D097
-P 10400 4800
-F 0 "#PWR0136" H 10400 4650 50  0001 C CNN
-F 1 "+12V" H 10415 4973 50  0000 C CNN
-F 2 "" H 10400 4800 50  0001 C CNN
-F 3 "" H 10400 4800 50  0001 C CNN
-	1    10400 4800
+P 10400 5400
+F 0 "#PWR0136" H 10400 5250 50  0001 C CNN
+F 1 "+12V" H 10415 5573 50  0000 C CNN
+F 2 "" H 10400 5400 50  0001 C CNN
+F 3 "" H 10400 5400 50  0001 C CNN
+	1    10400 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-12V #PWR0137
 U 1 1 5FA7D84C
-P 9800 4800
-F 0 "#PWR0137" H 9800 4900 50  0001 C CNN
-F 1 "-12V" H 9815 4973 50  0000 C CNN
-F 2 "" H 9800 4800 50  0001 C CNN
-F 3 "" H 9800 4800 50  0001 C CNN
-	1    9800 4800
+P 9800 5400
+F 0 "#PWR0137" H 9800 5500 50  0001 C CNN
+F 1 "-12V" H 9815 5573 50  0000 C CNN
+F 2 "" H 9800 5400 50  0001 C CNN
+F 3 "" H 9800 5400 50  0001 C CNN
+	1    9800 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1395,46 +1286,24 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 7300 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 1700 4750 1600
+	4500 1700 4500 1550
 Wire Wire Line
-	4750 1600 4900 1600
-Connection ~ 4750 1700
+	4500 1550 4650 1550
+Connection ~ 4500 1700
 Wire Wire Line
-	4750 1700 4150 1700
+	4500 1700 4500 1850
 Wire Wire Line
-	4750 1700 4750 1800
-Wire Wire Line
-	4750 1800 4900 1800
-Text Notes 5050 1600 0    50   ~ 0
+	4500 1850 4650 1850
+Text Notes 4950 1550 0    50   ~ 0
 Auto
-Text Notes 5050 1700 0    50   ~ 0
+Text Notes 4850 1700 0    50   ~ 0
 Normal
-Text Notes 5050 1850 0    50   ~ 0
+Text Notes 4900 1850 0    50   ~ 0
 Damp
-Text Notes 9100 1700 0    50   ~ 0
+Text Notes 9300 1650 0    50   ~ 0
 Auto
-Text Notes 9100 1800 0    50   ~ 0
-Normal
-Text Notes 9100 1950 0    50   ~ 0
+Text Notes 9250 1950 0    50   ~ 0
 Damp
-Wire Wire Line
-	9450 1800 9450 1350
-Wire Wire Line
-	9450 1350 9900 1350
-Connection ~ 9450 1800
-Wire Wire Line
-	9450 1800 9350 1800
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5FB35EE0
-P 9900 1350
-F 0 "TP3" V 9854 1538 50  0000 L CNN
-F 1 "GATE_IN" V 9945 1538 50  0000 L CNN
-F 2 "Seattle_Synths:TestPoint_Pad_4.0x4.0mm" H 10100 1350 50  0001 C CNN
-F 3 "~" H 10100 1350 50  0001 C CNN
-	1    9900 1350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4800 2800 4800 2350
 Wire Wire Line
@@ -1442,17 +1311,6 @@ Wire Wire Line
 Connection ~ 4800 2800
 Wire Wire Line
 	4800 2800 4650 2800
-$Comp
-L Connector:AudioJack2_Ground_SwitchT J3
-U 1 1 5FB5F239
-P 8600 4500
-F 0 "J3" H 8420 4376 50  0000 R CNN
-F 1 "ENVELOPE_OUT" H 8420 4467 50  0000 R CNN
-F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8600 4500 50  0001 C CNN
-F 3 "~" H 8600 4500 50  0001 C CNN
-	1    8600 4500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8200 4500 8300 4500
 $Comp
@@ -1586,11 +1444,198 @@ F 3 "" H 10700 6150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 9800 6150
-Connection ~ 9800 5300
+Connection ~ 9800 5700
 Connection ~ 10400 6150
-Connection ~ 10400 5300
+Connection ~ 10400 5700
 Wire Wire Line
-	10400 5300 10400 6150
+	10400 5700 10400 6150
 Wire Wire Line
-	9800 5300 9800 6150
+	9800 5700 9800 6150
+Wire Wire Line
+	10700 3500 10700 3600
+Wire Wire Line
+	10700 3600 10400 3600
+Wire Wire Line
+	10400 3600 10400 3900
+Wire Wire Line
+	10400 3900 10100 3900
+Wire Wire Line
+	10100 3900 10100 4000
+Wire Wire Line
+	10700 4300 10700 4400
+Wire Wire Line
+	10700 4400 10400 4400
+Wire Wire Line
+	10400 4400 10400 4700
+Wire Wire Line
+	10400 4700 10100 4700
+Wire Wire Line
+	10100 4700 10100 4800
+Text Notes 9200 1800 0    50   ~ 0
+Normal
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5FB35EE0
+P 10200 1350
+F 0 "TP3" V 10154 1538 50  0000 L CNN
+F 1 "GATE_IN" V 10245 1538 50  0000 L CNN
+F 2 "Seattle_Synths:TestPoint_Pad_4.0x4.0mm" H 10400 1350 50  0001 C CNN
+F 3 "~" H 10400 1350 50  0001 C CNN
+	1    10200 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 1800 9650 1800
+Connection ~ 9750 1800
+Wire Wire Line
+	9750 1350 10200 1350
+Wire Wire Line
+	9750 1800 9750 1350
+Wire Wire Line
+	10300 2450 10250 2450
+$Comp
+L power:GND #PWR0122
+U 1 1 5FA9C1F6
+P 10300 2450
+F 0 "#PWR0122" H 10300 2200 50  0001 C CNN
+F 1 "GND" V 10305 2322 50  0000 R CNN
+F 2 "" H 10300 2450 50  0001 C CNN
+F 3 "" H 10300 2450 50  0001 C CNN
+	1    10300 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 2450 9800 1700
+Connection ~ 9800 2450
+Wire Wire Line
+	9950 2450 9800 2450
+$Comp
+L Device:R R25
+U 1 1 5FA98D5E
+P 10100 2450
+F 0 "R25" V 9893 2450 50  0000 C CNN
+F 1 "4K7" V 9984 2450 50  0000 C CNN
+F 2 "Seattle_Synths:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10030 2450 50  0001 C CNN
+F 3 "~" H 10100 2450 50  0001 C CNN
+	1    10100 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 2000 9900 1900
+$Comp
+L power:GND #PWR0121
+U 1 1 5FA95FD5
+P 9900 2000
+F 0 "#PWR0121" H 9900 1750 50  0001 C CNN
+F 1 "GND" H 9905 1827 50  0000 C CNN
+F 2 "" H 9900 2000 50  0001 C CNN
+F 3 "" H 9900 2000 50  0001 C CNN
+	1    9900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1800 9750 1800
+Wire Wire Line
+	9800 1700 9900 1700
+Wire Wire Line
+	9800 2750 9800 2450
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5FA41B39
+P 9800 2950
+F 0 "SW2" V 9754 3098 50  0000 L CNN
+F 1 "SW_Push" V 9845 3098 50  0000 L CNN
+F 2 "Seattle_Synths:SW_PUSH_6mm_H5mm" H 9800 3150 50  0001 C CNN
+F 3 "~" H 9800 3150 50  0001 C CNN
+	1    9800 2950
+	0    1    1    0   
+$EndComp
+Text Label 9650 1800 2    50   ~ 0
+IN1
+Text Label 8950 1650 0    50   ~ 0
+OUT1
+Text Label 8950 1800 0    50   ~ 0
+OUT2
+Text Label 8950 1950 0    50   ~ 0
+OUT3
+Text Label 10100 3600 2    50   ~ 0
+IN1
+Text Label 10700 3900 0    50   ~ 0
+OUT1
+Text Label 10700 4100 0    50   ~ 0
+OUT2
+Text Label 10700 3700 0    50   ~ 0
+OUT3
+Wire Wire Line
+	8950 3150 9800 3150
+Connection ~ 8950 3150
+Text Label 10100 4400 2    50   ~ 0
+IN2
+Text Label 10700 4700 0    50   ~ 0
+OUT4
+Text Label 10700 4900 0    50   ~ 0
+OUT5
+Text Label 10700 4500 0    50   ~ 0
+OUT6
+Text Label 5300 1700 2    50   ~ 0
+IN2
+Text Label 4650 1550 0    50   ~ 0
+OUT4
+Text Label 4650 1850 0    50   ~ 0
+OUT6
+Wire Wire Line
+	4000 1700 3900 1700
+Wire Wire Line
+	4000 1700 4150 1700
+Connection ~ 4000 1700
+Connection ~ 4150 1700
+Wire Wire Line
+	4150 1700 4500 1700
+$Comp
+L Connector:AudioJack2_SwitchT J1
+U 1 1 5FC61F03
+P 5100 2800
+F 0 "J1" H 4920 2733 50  0000 R CNN
+F 1 "TRIGGER_IN" H 4920 2824 50  0000 R CNN
+F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5100 2800 50  0001 C CNN
+F 3 "~" H 5100 2800 50  0001 C CNN
+	1    5100 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J4
+U 1 1 5FC7CF88
+P 10100 1800
+F 0 "J4" H 9920 1733 50  0000 R CNN
+F 1 "GATE_IN" H 9920 1824 50  0000 R CNN
+F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 10100 1800 50  0001 C CNN
+F 3 "~" H 10100 1800 50  0001 C CNN
+	1    10100 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J3
+U 1 1 5FC7E9FC
+P 8600 4500
+F 0 "J3" H 8420 4433 50  0000 R CNN
+F 1 "ENVELOPE_OUT" H 8420 4524 50  0000 R CNN
+F 2 "Seattle_Synths:CUI_MJ-63052A" H 8600 4500 50  0001 C CNN
+F 3 "~" H 8600 4500 50  0001 C CNN
+	1    8600 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Seattle_Synths_DP3T_Switch:M2044SS1W03 S1
+U 1 1 5FCBF1F1
+P 10400 4200
+F 0 "S1" H 10400 5081 50  0000 C CNN
+F 1 "M2044SS1W03" H 10400 4990 50  0000 C CNN
+F 2 "Seattle_Synths:SW_M2044SS1W03" H 10400 4200 50  0001 L BNN
+F 3 "30.9 mm" H 10400 4200 50  0001 L BNN
+F 4 "NKK Switches" H 10400 4200 50  0001 L BNN "Field4"
+F 5 "5/9/18" H 10400 4200 50  0001 L BNN "Field5"
+F 6 "Manufacturer Recommendations" H 10400 4200 50  0001 L BNN "Field6"
+	1    10400 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

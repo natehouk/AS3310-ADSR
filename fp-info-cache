@@ -1,4 +1,4 @@
-19075189186265354
+19078397987811354
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76391,6 +76391,13 @@ CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor
 2
 2
 Seattle_Synths
+CUI_MJ-63052A
+
+
+0
+3
+3
+Seattle_Synths
 C_Disc_D7.5mm_W2.5mm_P5.00mm
 C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=7.5*2.5mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf
 C Disc series Radial pin pitch 5.00mm  diameter 7.5mm width 2.5mm Capacitor
@@ -76467,6 +76474,13 @@ Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W le
 0
 2
 2
+Seattle_Synths
+SW_M2044SS1W03
+
+
+0
+12
+12
 Seattle_Synths
 SW_PUSH_6mm_H5mm
 tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm
