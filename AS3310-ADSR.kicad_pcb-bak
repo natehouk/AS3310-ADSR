@@ -59,7 +59,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFF77F)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -698,7 +698,7 @@
   )
 
   (module Seattle_Synths:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5F951911) (tstamp 5FA1F4EF)
-    (at 117.51 95.56)
+    (at 59.56 145.28)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /5F9FDAC7)
@@ -745,7 +745,7 @@
   )
 
   (module Seattle_Synths:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5F951911) (tstamp 5FA1F4D3)
-    (at 137.81 80.11)
+    (at 59.71 95.54)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /5F9F5730)
@@ -792,7 +792,7 @@
   )
 
   (module Seattle_Synths:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5F951911) (tstamp 5FA1F4B7)
-    (at 102.91 109.43)
+    (at 59.76 70.52)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /5FA0EBDC)
@@ -839,7 +839,7 @@
   )
 
   (module Seattle_Synths:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5F951911) (tstamp 5FA1F49B)
-    (at 102.71 95.56)
+    (at 59.56 120.58)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /5FA2B593)
