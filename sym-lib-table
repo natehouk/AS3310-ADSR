@@ -1,5 +1,2 @@
 (sym_lib_table
-  (lib (name Eurocad)(type Legacy)(uri /home/natehouk/Documents/AS3310-ADSR/Eurocad.library/eurocad.lib)(options "")(descr ""))
-  (lib (name Seattle_Synths_DP3T_Switch)(type Legacy)(uri /home/natehouk/Documents/AS3310-ADSR/Seattle_Synths.library/M2044SS1W03.lib)(options "")(descr ""))
-  (lib (name Seattle_Synths_Audio_Jack)(type Legacy)(uri /home/natehouk/Documents/AS3310-ADSR/Seattle_Synths.library/MJ-63052A.lib)(options "")(descr ""))
 )
