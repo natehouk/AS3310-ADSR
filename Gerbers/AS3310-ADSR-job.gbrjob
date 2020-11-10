@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.7"
     },
-    "CreationDate":  "2020-11-08T18:28:21+01:00"
+    "CreationDate":  "2020-11-09T18:16:13+01:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "AS3310-ADSR",
       "GUID": "41533333-3130-42d4-9144-53522e6b6963",
-      "Revision": "rev?"
+      "Revision": "1"
     },
     "Size":
     {

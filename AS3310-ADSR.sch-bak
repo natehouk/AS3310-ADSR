@@ -1484,7 +1484,7 @@ U 1 1 5FC7E9FC
 P 8600 4500
 F 0 "J3" H 8420 4433 50  0000 R CNN
 F 1 "ENVELOPE_OUT" H 8420 4524 50  0000 R CNN
-F 2 "Seattle_Synths:CUI_MJ-63052A" H 8600 4500 50  0001 C CNN
+F 2 "Seattle_Synths:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8600 4500 50  0001 C CNN
 F 3 "~" H 8600 4500 50  0001 C CNN
 	1    8600 4500
 	-1   0    0    1   
@@ -1741,28 +1741,6 @@ F 3 "" H 10550 5800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C10
-U 1 1 5FA29AF6
-P 10400 5800
-F 0 "C10" V 10652 5800 50  0000 C CNN
-F 1 "10uF" V 10561 5800 50  0000 C CNN
-F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 10438 5650 50  0001 C CNN
-F 3 "~" H 10400 5800 50  0001 C CNN
-	1    10400 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5FA2971B
-P 9500 5800
-F 0 "C9" V 9752 5800 50  0000 C CNN
-F 1 "10uF" V 9661 5800 50  0000 C CNN
-F 2 "Seattle_Synths:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9538 5650 50  0001 C CNN
-F 3 "~" H 9500 5800 50  0001 C CNN
-	1    9500 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:TestPoint TP6
 U 1 1 5FD53960
 P 10250 5400
@@ -1794,5 +1772,27 @@ F 2 "Seattle_Synths:TestPoint_Pad_4.0x4.0mm" H 10150 5650 50  0001 C CNN
 F 3 "~" H 10150 5650 50  0001 C CNN
 	1    9950 5650
 	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Polarized C9
+U 1 1 5FA9F7E0
+P 9500 5800
+F 0 "C9" V 9755 5800 50  0000 C CNN
+F 1 "10uF" V 9664 5800 50  0000 C CNN
+F 2 "Seattle_Synths:CP_Radial_D5.0mm_P2.50mm" H 9538 5650 50  0001 C CNN
+F 3 "~" H 9500 5800 50  0001 C CNN
+	1    9500 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Polarized C10
+U 1 1 5FAA7021
+P 10400 5800
+F 0 "C10" V 10655 5800 50  0000 C CNN
+F 1 "10uF" V 10564 5800 50  0000 C CNN
+F 2 "Seattle_Synths:CP_Radial_D5.0mm_P2.50mm" H 10438 5650 50  0001 C CNN
+F 3 "~" H 10400 5800 50  0001 C CNN
+	1    10400 5800
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
